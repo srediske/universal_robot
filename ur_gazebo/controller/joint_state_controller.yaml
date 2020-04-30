@@ -4,27 +4,30 @@ joint_state_controller:
 
 /gazebo_ros_control:
   pid_gains:
+  # Proportinal (present) --> error, distance between actual position and target position
+  # Integral (past) --> accumulative error
+  # Derivative (future) --> change in error
     shoulder_pan_joint:
-      p: 0.0
-      i: 0.01 
-      d: 0.1
+      p: 20.0
+      i: 0.0
+      d: 10.0
     shoulder_lift_joint:
-      p: 0.0
+      p: 20.0
       i: 0.0
-      d: 0.1 
+      d: 10.0 
     elbow_joint:
-      p: 0.0
+      p: 20.0
       i: 0.0
-      d: 0.1
+      d: 10.0
     wrist_1_joint:
-      p: 0.0
+      p: 20.0
       i: 0.0
-      d: 0.1
+      d: 10.0
     wrist_2_joint:
-      p: 0.0
+      p: 20.0
       i: 0.0
-      d: 0.1
+      d: 10.0
     wrist_3_joint:
-      p: 0.0
+      p: 20.0
       i: 0.0
-      d: 0.1
+      d: 10.0
